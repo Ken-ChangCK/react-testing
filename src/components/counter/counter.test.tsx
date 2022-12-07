@@ -46,6 +46,7 @@ describe("Counter", () => {
   test("renders a count of 10 after clicking the set button", async () => {
     user.setup();
     render(<Counter />);
+    // 這是input type number的role
     const amountInput = screen.getByRole("spinbutton");
 
     await user.type(amountInput, "10");
